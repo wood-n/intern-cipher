@@ -44,25 +44,6 @@ public class Cipher
 	   		return decodedInput;
 	   	}
 	   	
-		public String encode(String input, int newShift)
-		{
-			String encodedInput = new String();
-
-			for(int i = 0, n = input.length() ; i < n ; i++)
-			{
-				char c = input.charAt(i);
-
-				int index = ALPHABET.indexOf(c);
-				if (index >= 26 - SHIFT )
-				{
-					index -= 26;
-				}
-				encodedInput += ALPHABET.charAt(index + SHIFT);
-			}
-			return encodedInput;
-		 }
-	   	
-	   	
 }
 
 
